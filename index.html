@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Development Task</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="box">
+    <h1>Responsive Layout Demo</h1>
+    <p>This box changes style based on your screen size.</p>
+  </div>
+
+  <hr />
+
+  <section class="quiz">
+    <h2>Simple JavaScript Quiz</h2>
+
+    <div class="question">
+      <p>1. What is the capital of France?</p>
+      <button onclick="checkAnswer('Paris', 'quizResult1', this)">Paris</button>
+      <button onclick="checkAnswer('London', 'quizResult1', this)">London</button>
+      <button onclick="checkAnswer('Rome', 'quizResult1', this)">Rome</button>
+      <p id="quizResult1"></p>
+    </div>
+
+    <div class="question">
+      <p>2. What is 5 + 3?</p>
+      <button onclick="checkAnswer('6', 'quizResult2', this)">6</button>
+      <button onclick="checkAnswer('8', 'quizResult2', this)">8</button>
+      <button onclick="checkAnswer('10', 'quizResult2', this)">10</button>
+      <p id="quizResult2"></p>
+    </div>
+
+    <div class="question">
+      <p>3. What language is used to style web pages?</p>
+      <button onclick="checkAnswer('HTML', 'quizResult3', this)">HTML</button>
+      <button onclick="checkAnswer('CSS', 'quizResult3', this)">CSS</button>
+      <button onclick="checkAnswer('JavaScript', 'quizResult3', this)">JavaScript</button>
+      <p id="quizResult3"></p>
+    </div>
+  </section>
+
+  <hr />
+
+  <section class="joke">
+    <h2>Get a Random Joke</h2>
+    <button onclick="fetchJoke()">Get Joke</button>
+    <p id="jokeText"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+  
